@@ -1,0 +1,12 @@
+Clone::More change log
+--------------------------
+
+Thu Jul 13 08:14:00 PST 2006 	Trevor Hall <wazzuteke@cpan.org>
+
+	Version 0.90.1
+
+		1. Initial release to CPAN
+		2. Supported for launch:
+			2.a Programatic circular reference ties
+			2.b 'Clone' hooks
+			2.c Circulartiy verification
