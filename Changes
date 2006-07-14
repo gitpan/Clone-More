@@ -1,12 +1,47 @@
-Clone::More change log
---------------------------
 
-Thu Jul 13 08:14:00 PST 2006 	Trevor Hall <wazzuteke@cpan.org>
-
-	Version 0.90.1
-
-		1. Initial release to CPAN
-		2. Supported for launch:
-			2.a Programatic circular reference ties
-			2.b 'Clone' hooks
-			2.c Circulartiy verification
+RCS file: /usr/local/cvsroot/internal_modules/cpan/Clone-More/lib/Clone/More.pm,v
+Working file: lib/Clone/More.pm
+head: 1.6
+branch:
+locks: strict
+access list:
+keyword substitution: kv
+total revisions: 6;	selected revisions: 6
+description:
+----------------------------
+revision 1.6
+date: 2006/07/14 18:36:38;  author: thall;  state: Exp;  lines: +3 -2
+Moved the exporting functions to @EXPORT_OK rather than @EXPORT ... silly me
+----------------------------
+revision 1.5
+date: 2006/07/14 18:32:11;  author: thall;  state: Exp;  lines: +2 -2
+ * Modifications to unit tests reporitng failures in 0.90.1
+----------------------------
+revision 1.4
+date: 2006/07/14 02:35:55;  author: thall;  state: Exp;  lines: +3 -4
+ * Upped version
+ * Changed description
+ * Updated Makefile to no longer have a requirement of perl 5.8
+----------------------------
+revision 1.3
+date: 2006/07/14 02:33:11;  author: thall;  state: Exp;  lines: +184 -118
+Initial release to CPAN
+----------------------------
+revision 1.2
+date: 2006/06/07 03:58:29;  author: thall;  state: Exp;  lines: +54 -15
+ * Completed functionality of programatic handling of circular references
+ * Updated unit tests to take deprecation of depth into concideration
+ * Updated POD
+----------------------------
+revision 1.1
+date: 2006/06/03 02:24:17;  author: thall;  state: Exp;
+ * Completely re-factored archetecture
+ * Fixed some remaning memory leak issues
+ * New methodology for dispatching cloning devices
+ * New methodology for tracking circular references
+ * Added new methods
+   * circular, is_circular
+ * Expanded POD
+ * Added new optimization hacks
+ * Added new Perl configuration variables
+=============================================================================

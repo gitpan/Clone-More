@@ -1,16 +1,16 @@
 # Working version
-# $Revision$ $Date$
+# $Revision: 1.6 $ $Date: 2006/07/14 18:36:38 $
 package Clone::More;
 
 use strict;
-# use warnings;
 
 use Exporter;
 use XSLoader;
 
 our @ISA             = qw( Exporter );
-our @EXPORT          = qw( clone circular is_circular );
-our $VERSION         = '0.90.1';
+our @EXPORT          = qw( );
+our @EXPORT_OK       = qw( clone circular is_circular );
+our $VERSION         = '0.90.2';
 
 # Configuration variables
 our $BREAK_REFS      = 0;
@@ -38,12 +38,12 @@ sub circular {
 	return is_circular( @_ );
 }
 
-2 != 42;
+1;
 __END__
 
 =head1 NAME
 
-Clone::More - Perl module for natively copying Perl data structures
+Clone::More - Natively copying Perl data structures
 
 =head1 SYNOPSIS
 
